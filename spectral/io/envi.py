@@ -193,7 +193,7 @@ def read_envi_header(file):
                   'spectral.setttings.envi_support_nonlowercase_params to ' \
                   'True.'
             warnings.warn(msg)
-            print('Header parameter names converted to lower case.')
+            warnings.warn('Header parameter names converted to lower case.')
         return dict
     except:
         raise EnviHeaderParsingError()
